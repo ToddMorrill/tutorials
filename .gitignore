@@ -102,3 +102,16 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+*.DS_Store*
+*/data/*
+*/.vscode-server-insiders/*
+
+*/.conda*
+*/.config*
+*/.gitconfig*
+*/.ipython*
+*/.jupyter*
+*/.local*
+*/.vs-liveshare-keychain*
+*/dask-worker-space*

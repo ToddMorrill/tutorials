@@ -1,0 +1,17 @@
+// See https://aka.ms/vscode-remote/devcontainer.json for format details.
+{
+	"name": "tf",
+	"dockerFile": "Dockerfile",
+	"context": ".",
+	"appPort": "8888:8888",
+	"workspaceFolder": "/tf",
+	"runArgs": ["-v", "/Users/tmorrill002/Documents/privacy:/tf"],
+	// need overrideCommand=false when doing something like running Jupyter as a CMD in Dockerfile
+	// otherwise "overrideCommand": true --> /bin/sh -c "while sleep 1000; do :; done" to keep the container alive
+	"overrideCommand": false,
+	"extensions": [
+		"visualstudioexptteam.vscodeintellicode",
+		"ms-python.python",
+		"ms-vsliveshare.vsliveshare-pack"
+	]
+}
