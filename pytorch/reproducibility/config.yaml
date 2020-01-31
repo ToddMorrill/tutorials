@@ -1,0 +1,12 @@
+embed_size: 300
+conv_hidden_size: 200
+rnn_hidden_size: 128
+kernel_compression: 4
+pad_id: 0
+vocab_size: 10
+max_len: 100
+dropout: .2
+clip_grad: 5.0
+lr: 0.001
+max_epoch: 20
+print_every: 1

@@ -115,3 +115,10 @@ venv.bak/
 */.local*
 */.vs-liveshare-keychain*
 */dask-worker-space*
+
+#LaTeX
+*.aux
+*.fdb_latexmk
+*.fls
+*.pdf
+*.gz
