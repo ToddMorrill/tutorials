@@ -1,0 +1,70 @@
+# https://www.youtube.com/watch?v=sa-TUpSx1JA
+
+# example using regex search in VS Code
+
+\w
+hello world
+
+metachars - \W
+.\[]{}*?+^()
+
+\d, \D
+0123456789
+
+\s \S
+    
+
+\b \B
+word boundary
+
+^beginning end$
+
+\d\d\d.\d\d\d.\d\d\d\d
+\d\d\d[.-]\d\d\d[.-]\d\d\d\d
+\d{3}[.-]\d{3}[.-]\d{4}
+123.456.7890
+123-456-7890
+123*456*7890
+
+[89]00[.-]\d\d\d[.-]\d\d\d\d
+[89]00[.-][0-9]{3}[.-][0-9]{4}
+800-456-7890
+900-456-7890
+
+[^a-z]
+NOT LOWERCASE
+
+[^b]at
+cat
+pat
+bat <- won't be matched
+mat
+
+Mr\.?\s[A-Z]\w*
+Mr. Morrill
+Mr Smith
+Mr T
+
+M(r|s|rs)\.?\s[A-Z]\w*
+Mr. Morrill
+Mr Smith
+Mr T
+Mrs. Robinson
+Mrs Morrill
+Ms T
+
+[a-zA-Z0-9.-]+@[a-zA-Z]+\.(com|edu|net)
+XYZemail@gmail.com
+xyz.email@uni.edu
+xyz-email-001@company.net
+
+working with groups
+https?://(www\.)?(\w+)(\.\w+)
+# replace with Group 0:  $0 (whole match)
+# replace with Group 1:  $1 (www)
+# replace with Group 2:  $2 (domain name)
+# replace with Group 3:  $3 (.com, .edu, etc.)
+# replace with $2$3 (standardized, e.g. google.com)
+Group 3:  http://www.google.com
+Group 3:  https://www.google.com
+Group 3:  http://nasa.gov

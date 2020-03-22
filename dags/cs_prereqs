@@ -1,0 +1,12 @@
+// CS Course Prerequisites
+digraph {
+	"CS 50" -> "CS 51"
+	"CS 50" -> "CS 61"
+	"CS 20" -> "CS 121"
+	"CS 50" -> "CS 124"
+	"CS 51" -> "CS 124"
+	"CS 121" -> "CS 124"
+	"Stat 110" -> "CS 124"
+	"CS 51" -> "CS 182"
+	"CS 121" -> "CS 182"
+}
