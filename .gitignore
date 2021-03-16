@@ -122,3 +122,8 @@ venv.bak/
 *.fls
 *.pdf
 *.gz
+*.bbl
+*.bcf
+*.blg
+*.out
+*.run.xml
