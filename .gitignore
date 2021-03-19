@@ -127,3 +127,9 @@ venv.bak/
 *.blg
 *.out
 *.run.xml
+
+*.jsonl
+*.txt
+*.csv
+sample_kb/
+sample_nlp/
